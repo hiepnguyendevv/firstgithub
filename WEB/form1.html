@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/form1.css">
+</head>
+
+<body>
+  <div class="board">
+    <h2>HTML Form</h2>
+    <form action="">
+      <label for="">First Name :</label>
+      <input type="text">
+      <label for="">Last Name :</label>
+      <input type="text">
+      <label for="">Date of Birth :</label>
+      <input type="text">
+      <label for="">Email id :</label>
+      <input type="text" id="email" onfocusout="formValidate()">
+      <label for="">Mobile Number :</label>
+      <input type="text">
+    </form>
+    <button type="button" onclick="alert('Nhap thanh cong')">SUBMIT</button>
+    <button>RESET</button>
+  </div>
+  <script>
+    function formValidate() {
+      var regExp = /^[A-Za-z][\w$.]+@[\w]+\.\w+$/;
+      var email = document.getElementById("email").value;
+      if (regExp.test(email))
+        alert('Email hợp lệ!');
+      else
+        alert('email không hợp lệ!');
+    }
+  </script>
+</body>
+
+</html>

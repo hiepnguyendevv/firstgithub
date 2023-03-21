@@ -1,0 +1,29 @@
+form {
+  display: grid;
+  grid-template-columns: 150px 300px;
+  grid-template-rows: 25px 25px 25px 25px 25px ;
+  row-gap: 10px;
+  margin-left: 10px;
+}
+
+
+input {
+  background-color: rgb(153, 142, 142);
+  border: none;
+  border-radius: 7px;
+}
+
+button {
+  margin-top: 50px;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 7px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: rgb(153, 142, 142);
+}

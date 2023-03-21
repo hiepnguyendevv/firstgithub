@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<style>
+  table,
+  td, tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 38px;
+  }
+
+  .sao {
+    color: red;
+  }
+
+  .input1 {
+    width: 95%;
+    height: 88%;
+  }
+
+  .select2 {
+    width: 100%;
+    height: 99%;
+  }
+
+  .input3 {
+    width: 98%;
+    height: 88%;
+  }
+
+  .date {
+    width: 97%;
+    height: 95%;
+  }
+</style>
+
+<body>
+  <h1 style="color: blue; text-align: center;">PHIẾU ĐĂNG KÝ THÔNG TIN SINH VIÊN</h1>
+  <p style="color: blue; text-align: center; ">---------------------------------------------------------</p>
+
+  <table style="background-color: red; width: 100%;">
+    <tr>
+      <td style="color:#fff">A. THÔNG TIN CÁ NHÂN</td>
+    </tr>
+    <tr>
+      <td>
+        <table style="background-color: antiquewhite !important; width: 100%;" >
+          <tr>
+            <td>1. Họ và tên:<span class="sao">*</span></td>
+            <td><input type="text" name="" id="" placeholder="Họ, tên đệm" class="input1"></td>
+            <td><input type="text" placeholder="Tên" class="input1"></td>
+            <td>Giới tính</td>
+            <td>
+              <select name="gender" id="" class="select2">
+                <option value="">---Giới tính---</option>
+                <option value="Male">Nam</option>
+                <option value="Female">Nữ</option>
+              </select></td>
+            <td>Mã sinh viên:<span class="sao">*</span></td>
+            <td><input class="input1"type="text" name="" id="" placeholder="10 chữ số, bắt đầu ="></td>
+          </tr>
+          <tr>
+            <td>3. Dân tộc:<span class="sao">*</span></td>
+            <td>
+              <select name="dantoc" id="" class="select2">
+                <option value="dantoc">---Dân tộc---</option>
+                <option value="kinh">Kinh</option>
+                <option value="thai">Thái</option>
+                <option value="etc">...</option>
+              </select>
+            </td>
+            <td>Tôn giáo:<span class="sao">*</span></td>
+            <td>
+              <select name="tongiao" id="" class="select2">
+                <option value="">---Tôn giáo---</option>
+                <option value="">abc</option>
+                <option value="">Không</option>
+              </select>
+            </td>
+            <td>Đối tượng chính sách:</td>
+            <td colspan="2">
+              <select name="doituong" id="" class="select2">
+                <option value="">---Đối tượng---</option>
+                <option value="">Có</option>
+                <option value="">Không</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>5.Ngày sinh:<span class="sao">*</span></td>
+            <td><input type="date" name="date" id="" class="date"></td>
+            <td>Bằng chữ:<span class="sao">*</span></td>
+            <td colspan="4"><input style="width:99%; height:88%" type="text" name="" id="" placeholder="Ngày hai chín tháng tám năm một chín chín mốt"></td>
+          </tr>
+          <tr>
+            <td>7.HK thường trú:<span class="sao">*</span></td>
+            <td><select name="" id="" class="select2">
+                <option value="">------Tỉnh------</option>
+                <option value="">Hà Nội</option>
+              </select></td>
+            <td><select name="" id="" class="select2">
+                <option value="">----Quận, Huyện</option>
+                <option value="">Thanh Xuân</option>
+                <option value="">Đống Đa</option>
+              </select></td>
+            <td><select name="" id="" class="select2">
+                <option value="">----Phường, Xã----</option>
+                <option value="">Khương Đình</option>
+                <option value="">Hạ Đình</option>
+              </select></td>
+            <td colspan="3"><input class="input3" type="text" name="" id="" placeholder="Địa chỉ"></td>
+
+          </tr>
+          <tr>
+            <td>8. Chỗ ở hiện nay:<span class="sao">*</span></td>
+            <td>
+              <select name="" id="" class="select2">
+                <option value="">------Tỉnh------</option>
+                <option value="">Hà Nội</option>
+              </select></td>
+            <td>
+              <select name="" id="" class="select2">
+                <option value="">----Quận, Huyện</option>
+                <option value="">Thanh Xuân</option>
+                <option value="">Đống Đa</option>
+              </select></td>
+            <td>
+              <select name="" id="" class="select2">
+                <option value="">----Phường, Xã----</option>
+                <option value="">Khương Đình</option>
+                <option value="">Hạ Đình</option>
+              </select></td>
+            <td colspan="3"><input class="input3"type="text" name="" id="" placeholder="Địa chỉ"></td>
+
+          </tr>
+          <tr>
+            <td>9.Số CMND:<span class="sao">*</span></td>
+            <td><input type="text" name="" id="" class="input1"></td>
+            <td>Ngày cấp: <span class="sao">*</span></td>
+            <td><input type="date" name="" id="" class="date"></td>
+            <td>Nơi cấp: <span class="sao">*</span></td>
+            <td colspan="2"><select name="" id="" class="select2">
+                <option value="">Tỉnh cấp</option>
+                <option value="">Hà Nội</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td>6. Nơi sinh:<span class="sao">*</span></td>
+            <td><select name="" id="" class="select2">
+                <option value="">----Nơi sinh----</option>
+                <option value="">Hà Nội</option>
+              </select></td>
+            <td>Cơ sở:<span class="sao">*</span></td>
+            <td>
+              <select name="" id="" class="select2">
+                <option value="">--Cơ sở đào tạo--</option>
+                <option value="">Hà Nội</option>
+              </select></td>
+            <td>Chương trình ĐT:<span class="sao">*</span></td>
+            <td colspan="2">
+              <select name="" id="" class="select2">
+                <option value="">Chương trình đại trà</option>
+              </select>
+            </td>
+
+          </tr>
+          <tr>
+            <td>Ngành đào tạo:<span class="sao">*</span></td>
+            <td>
+              <select name="" id="" class="select2">
+                <option value="">---Ngành---</option>
+              </select>
+            </td>
+            <td>Chuyên ngành:<span class="sao">*</span></td>
+            <td>
+              <select name="" id="" class="select2">
+                <option value="">----Chọn Chuyên ngành----</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Khóa:<span class="sao">*</span></td>
+            <td>
+              <select name="" id="" class="select2">
+                <option value="">----Khóa----</option>
+              </select>
+            </td>
+            <td>Lớp<span class="sao">*</span></td>
+            <td colspan="4">
+              <select name="" id="" class="select2">
+                <option value=""></option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th style="text-align: center;">11.Điện thoại và Email thường xuyên sử dụng:</th>
+
+          </tr>
+          <tr>
+            <td>a. Di động<span class="sao">*</span></td>
+            <td colspan="2"> <input style="width:97%; height: 88%;" type="text" name="" id="" placeholder="Bắt đầu bằng số 0"></td>
+            <td>b. Cố đinh:</td>
+            <td colspan="3"><input class="input3" type="text" name="" id=""></td>
+          </tr>
+          <tr>
+            <td>c. Email<span class="sao">*</span></td>
+            <td colspan="2"><input type="text" name="" id="" style="width:97%; height: 88%;"></td>
+            <td>d. Email khác:</td>
+            <td colspan="3"><input class="input3" type="text" name="" id=""></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+.all{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: Arial;
+}
+
+.mail {
+  font-size: 25px;
+  color: rgb(134, 125, 125);
+  margin-bottom: 10px;
+}
+
+.signup {
+  width: 370px;
+  height: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+.paragraph {
+  font-size: 17px;
+  color: rgb(134, 125, 125);
+}
+button {
+  background-color: rgb(10, 102, 194);
+  color: white;
+  border: none;
+  font-size: 20px;
+  width: 400px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 30px;
+  
+
+}

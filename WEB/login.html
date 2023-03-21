@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+  <div class="dangNhap">
+    <h2 style="text-align: center;">Đăng nhập</h2>
+    <form action="login.html" method="post" onsubmit="return validateForm()" class="form">
+      <label for="username">Tên đăng nhập:</label>
+      <input type="text" id="username" name="Tên đăng nhập" placeholder="Hãy nhập tên của bạn">
+      <label for="password">Mật khẩu:</label>
+      <input type="password" id="password" name="mật khẩu" placeholder="Hãy nhập mật khẩu của bạn">
+      <div></div>
+      <button type="submit" class="button_login">Đăng nhập</button>
+    </form>
+    <p style="text-align: center;">Bạn không có tài khoản? <a href="register.html">Đăng kí</a> bây giờ!</p>
+
+  </div>
+
+  <script>
+    function validateForm() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      if (username.trim() == "" || password.trim() == "") {
+        alert("Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu");
+        return false;
+      }
+
+      if (username != "admin" || password != "admin123") {
+        alert("Tên đăng nhập hoặc mật khẩu không chính xác");
+        return false;
+      }
+
+      window.location.href = "success.html";
+      return false;
+    }
+  </script>
+</body>
+
+</html>

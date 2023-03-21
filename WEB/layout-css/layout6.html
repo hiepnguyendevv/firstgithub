@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .layout {
+      height: 800px;
+      display: grid;
+      grid-template-areas: 'head head'
+                            'nav nav'
+                            'aside section'
+                            'footer footer';      
+     grid-template-columns: 400px 1fr;  
+     grid-template-rows: 100px 50px 1fr 100px;
+     gap: 10px;
+    }
+
+    .header {
+      grid-area: head;
+      border: 1px solid;
+      text-align: center;
+    }
+
+    .nav {
+      grid-area: nav;
+      border: solid 1px;
+      text-align: center;
+    }
+
+    .aside {
+      grid-area: aside;
+      border: solid 1px;
+      text-align: center;
+    }
+
+    .section {
+      grid-area: section;
+      border: solid 1px;
+      text-align: center;
+    }
+
+    .footer {
+      grid-area: footer;
+      border: solid 1px;
+      text-align: center;
+    }
+
+    div {
+      font-size: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="layout" >
+    <div class="header"> Header </div>
+    <div class="nav">Nav</div>
+    <div class="aside">Aside</div>
+    <div class="section">Section</div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+
+</html>

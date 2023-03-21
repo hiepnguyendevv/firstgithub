@@ -1,0 +1,20 @@
+.form-input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+ 
+body {
+  margin: 0;
+}
+.address {
+  background-color: lightblue;
+}
+
+.form-login {
+  background-color: lightpink;
+}
+
+input {
+  width: 100%;
+  margin-top: 10px;
+}

@@ -1,0 +1,34 @@
+.cat-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  object-fit: cover;
+  object-position: center;
+  vertical-align: middle;
+}
+
+.div-tweet {
+  display: inline-block;
+
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+.tweet {
+  font-size: 15px;
+  height: 50px;
+  width: 300px;
+  border: none;
+}
+
+.tweet-button {
+
+  height: 35px;
+  width: 100px;
+  border-radius: 30px;
+  background-color: rgb(7, 94, 224);
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+}

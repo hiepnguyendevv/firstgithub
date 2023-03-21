@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .layout {
+        height: 450px;
+        width: 800px;
+        display: grid;
+        grid-template-areas: 'd1 d2 d2 d3' 
+                             'd1 d4 d5 d8' 
+                             'd1 d6 d7 d8';
+                             gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+      }
+
+      /* .div1,.div2,.div3,.div4,.div5,.div6,.div7,.div8{
+        border: 1px solid;
+      } */
+
+      .div1,.div2,.div8 {
+        background-color: rgb(59, 224, 59);
+      }
+
+      .div6,.div5,.div3 {
+        background-color: rgb(255, 51, 0);
+      }
+
+      .div4,.div7 {
+        background-color: rgb(255, 174, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="div1" style="grid-area: d1;"></div>
+      <div class="div2" style="grid-area: d2;"></div>
+      <div class="div3" style="grid-area: d3;"></div>
+      <div class="div4" style="grid-area: d4;"></div>
+      <div class="div5" style="grid-area: d5;"></div>
+      <div class="div6"style="grid-area: d6;"></div>
+      <div class="div7" style="grid-area: d7;"></div>
+      <div class="div8" style="grid-area: d8;"></div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .layout {
+        display: grid;
+        height: 1000px;
+        grid-template-rows: 100px 100px 1fr 100px;
+        gap: 10px;
+
+      }
+      .header {
+        border: 1px solid red;
+      }
+
+      .menu {
+         border: 1px solid red;
+         
+      }
+
+      .content-left {grid-area: left;}
+      .main-content {grid-area: main;}
+      .content-right {grid-area: right;}
+
+      .content {
+        display: grid;
+        grid-template-areas: 'left left main main main right right';
+        gap: 10px;
+   
+
+      }
+
+      .content > div {
+        border: solid 1px blue;
+        text-align: center;
+
+      }
+  
+
+      .footer {
+        border: 1px solid red;
+      }
+
+      div {
+        font-size: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="layout">
+      <div class="header">Header</div>
+    <div class="menu"> Navigation Menu</div>
+    <div class="content">
+      <div class="content-left">Content</div>
+      <div class="main-content">Main Content</div>
+      <div class="content-right">Content</div>
+    </div>
+    <div class="footer">
+      Footer
+    </div>
+    </div>
+  </body>
+</html>

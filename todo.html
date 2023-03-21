@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>My Todo App</title>
+  </head>
+  <body>
+    <input id="todo-title" type="text" />
+    <input type="date" name="" id="date-picker">
+    <button onclick="addTodo()">Add Todo</button>
+    <div id="todo-list"></div>
+    <script>
+      let todos = [{
+        title: 'Get groceries',
+        dueDate: '2021-10-04',
+        id: 'id1'
+      }, {
+        title: 'Wash car',
+        dueDate: '2021-02-03',
+        id: 'id2'
+
+      }, {
+        title: 'Make dinner',
+        dueDate: '2021-03-04',
+        id: 'id3'
+      }];
+      
+      render();
+
+      function addTodo() {
+        let textbox = document.getElementById('todo-title');
+        let title = textbox.value;
+
+        const datePicker = document.getElementById('date-picker');
+        const dueDate = datePicker.value;
+
+        const id = '' + new Date().getTime();
+        
+        todos.push({
+          title: title,
+          dueDate: dueDate,
+          id: id
+        });
+        render();
+      }   
+
+      function deletTodo(event) {
+        const deleteButton = event.target;
+        const idToDelete = deleteButton.id;
+
+        todos = todos.filter(function(todo){
+          if(todo.id === idToDelete){
+            return false;
+          }
+          else{
+            return true;
+          }
+        });
+        render();
+      }
+
+      function render () {
+        //reset our list
+        document.getElementById('todo-list').innerHTML='';
+
+        todos.forEach(function (todo) {
+          const element = document.createElement('div');
+          element.innerText = todo.title + ' ' + todo.dueDate;
+
+          const deletButton  = document.createElement('button');
+          deletButton.innerText = 'Delete';
+          deletButton.style = 'margin-left: 12px;';
+          deletButton.onclick = deletTodo;
+          deletButton.id = todo.id;
+          element.appendChild(deletButton);
+
+          let todoList = document.getElementById('todo-list');
+          todoList.appendChild(element);
+      });
+      }
+    </script>
+  </body>
+</html>
